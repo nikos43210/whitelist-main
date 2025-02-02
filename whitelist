@@ -1,1 +1,9 @@
+local HWIDTable = loadstring(game:HttpGet('https://pastebin.com/raw/BpFDbQWD'))()
+local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
 
+for i,v in pairs(HWIDTable) do
+    if v == HWID then
+        print("Whitelisted")
+        loadstring(game:HttpGet('https://pastebin.com/raw/y6HhC8F6'))()
+    end
+end
